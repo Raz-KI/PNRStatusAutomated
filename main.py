@@ -69,6 +69,6 @@ def get_status(pnr_list):
 if __name__ == "__main__":
     scheduler = BlockingScheduler()
     pnr_list = [8631710095, 8631710226, 2333243180, 2929302136]
-    scheduler.add_job(lambda: get_status(pnr_list), 'interval', minutes=1440)
+    scheduler.add_job(lambda: get_status(pnr_list), 'interval', minutes=5)
     print("Scheduler started. Press Ctrl+C to exit.")
     scheduler.start()
