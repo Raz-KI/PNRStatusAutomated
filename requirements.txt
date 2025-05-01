@@ -1,7 +1,6 @@
 playwright
 gunicorn
 pytesseract
-smtplib
-email.message
+email
 ssl
 apscheduler
