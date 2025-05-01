@@ -40,7 +40,7 @@ def get_status(pnr_list):
     with sync_playwright() as p:
         for pnr in pnr_list:
             try:
-                browser = p.chromium.launch(headless=False)
+                browser = p.chromium.launch(headless=True)
                 page = browser.new_page()
                 page.goto("https://www.indianrail.gov.in/enquiry/PNR/PnrEnquiry.html?locale=en")
                 page.fill("#inputPnrNo",str(pnr))
