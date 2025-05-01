@@ -1,0 +1,7 @@
+playwright
+gunicorn
+pytesseract
+smtplib
+email.message
+ssl
+apscheduler
